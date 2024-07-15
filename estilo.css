@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    margin: 0;
+}
+h1{
+    font-size: 3.5em;
+    text-shadow: 5px 5px 5px white;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 1.5em;
+    text-align: center;
+}
+p{
+    font-size: 1em;
+}
+ul{
+    list-style: circle;
+    /*Para quitar puntos cambiar "circle" por "none"*/
+}
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid orangered;
+    box-shadow: 2px 2px 10px rgb(16, 8, 66);
+    background-color: rgb(16, 8, 66);
+    color: white;
+}
+
+button:hover{
+    background-color: orangered;
+    border:2px solid rgb(16, 8, 66);
+    cursor: grab;
+    color:  rgb(16, 8, 66);
+    box-shadow: 2px 2px 10px orangered;
+}
+
+.contenedor{
+    max-width: 1400px;
+    margin: auto;    
+}
+
+.color{
+    color: rgb(217, 236, 45);
+    -webkit-text-stroke-color:rgb(75, 75, 7);
+    -webkit-text-stroke-width: 2px;
+}
+
+.color2{
+    color:rgb(8, 8, 72);
+    -webkit-text-stroke-color:blue;
+    -webkit-text-stroke-width: 2px;
+}
+
+.color3{
+    color: red;
+    -webkit-text-stroke-color:rgb(125, 9, 9);
+    -webkit-text-stroke-width: 2px;
+}
+
+header{
+    background: linear-gradient( rgb(6, 10, 61) 20%, rgb(6, 56, 67) 70%,rgb(247, 246, 245));
+    /*background-image: url(https://img.freepik.com/free-vector/orange-monochrome-halftone-background_1409-1971.jpg?t=st=1720730819~exp=1720734419~hmac=05d505c207ebc5e87e667aa61863fd313f6953ed9b0f005f92e2764818bb0ff7&w=1060);
+    background-size: cover;*/
+}
+
+header .logo{
+    margin: 0px;
+    padding: 25px;
+    font-weight: bold;
+    color: orangered;
+    font-size: 2.5em;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bolder;
+    color: orangered
+}
+
+a:hover{
+    color: white;
+}
+
+#apr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: url(https://img.freepik.com/premium-photo/wall-geo-matric-shapes-illustration-art-abstract-painting-pattern_1020867-15824.jpg?w=996);
+    background-color:  linear-gradient(45deg, rgb(10, 10, 63) 50%, rgb(247, 246, 245));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: orangered;
+    padding: 40px 0px;  
+    margin: 20px;
+
+}
+
+#apr h1{
+    color: rgb(11, 66, 87);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orangered;
+}
+
+#apr button{
+    font-size: 1.3em;
+}
+
+#art-pint{
+    padding: 100px 12px;
+    text-align: center;
+    background-color:white ;
+    color:rgb(6, 10, 61);
+}
+
+#art-escu{
+    background-color: rgb(6, 56, 67);
+    color:white;
+    padding: 100px;
+
+}
+
+#art-escu .contenedor{
+    padding: 100px 15px;
+}
+
+#art-escu h2{
+    margin-top: 0;
+    font-size: 2.5em;
+}
+
+#art-escu .card {
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+/*first child: Aplica configuracion al primer elemento (En este caso card1)*/
+.card:first-child {
+    background-image:url(https://img.freepik.com/premium-photo/abstract-geometric-background-wallpaper-style-dark-turquoise-dark-orange_334364-17706.jpg?w=1060);
+    
+}
+
+/*nth-child(): Aplica configuracion al elemento del parentesis. En este caso card2*/
+.card:nth-child(2){
+    background-image: url(https://img.freepik.com/vector-premium/pared-3d-abstracta-cubos-diferentes-colores_893012-90786.jpg);
+}
+
+.card:last-child{
+    background-image: url(https://img.freepik.com/premium-vector/colorful-abstract-3d-wallpapers-hd-wallpapers_893012-89724.jpg);
+}
+
+ div .card:hover{
+    background:white;
+    color:  rgb(6, 10, 61);
+    box-shadow: 5px 5px 70px  orangered;
+}
+
+#art-artistas .contenedor{
+    align-items:baseline;
+    padding: 40px 12px;
+    background-image: url(https://img.freepik.com/free-vector/geometric-mural-wallpaper_23-2148699376.jpg?t=st=1721081083~exp=1721084683~hmac=2cdf4b40096628375d948dda7e823d501a8fcba1d6f2153cb5adbeeeb475a780&w=996
+    );
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    background-color: brown;
+    color: rgb(199, 192, 192)
+}
+
+/*https://img.freepik.com/free-vector/geometric-mural-wallpaper_23-2148699376.jpg?t=st=1721081083~exp=1721084683~hmac=2cdf4b40096628375d948dda7e823d501a8fcba1d6f2153cb5adbeeeb475a780&w=996
+
+https://img.freepik.com/free-vector/geometric-brown-decoration_1023-151.jpg?t=st=1721080706~exp=1721084306~hmac=66023487eaa7e303698b8ea65892606a5bf0b07fff60d70eeb5bbb64e38947df&w=740
+*/
+
+#art-artistas li{
+    margin: 15px 0px;
+    font-weight: bolder;
+}
+
+footer{
+    background: linear-gradient( rgb(6, 10, 61) 10%, rgb(6, 56, 67) 20%,rgb(247, 246, 245));
+    margin: 0;
+    padding: 12px;
+    color: orangered;
+}
+
+footer .contenedor{
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items:center;
+}
+
+@media(500px <= width <= 1900px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #art-pint .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #art-escu .lista{
+        display: flex;
+        justify-content: center;
+
+    }
+    #art-escu .card{
+        padding: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+    }
+}
+
+/*https://img.freepik.com/free-photo/wallpaper-blue-orange-cubes-dark-background_1123-370.jpg?t=st=1720728811~exp=1720732411~hmac=1937f3a5f651e00f03046c1ac7b475b73350d031251bdc81caf245786c0bd879&w=360
+
+https://img.freepik.com/premium-photo/modern-impressionism-technique-wall-poster-print-template-abstract-painting-art-hand-drawn-by-dry-brush-paint-background-texture-oil-painting-style-generative-ai_251792-12218.jpg?w=360
+
+https://img.freepik.com/premium-photo/abstract-geometric-background-wallpaper-style-dark-turquoise-dark-orange_334364-17706.jpg?w=1060
+
+https://img.freepik.com/free-vector/3d-stripes-background-paper-style_23-2148400329.jpg?t=st=1720730432~exp=1720734032~hmac=bb041722923f27c4a5c522fab5c745a6a5ef468e5715135365816df5855a2aed&w=826
